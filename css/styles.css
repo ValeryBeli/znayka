@@ -1,0 +1,459 @@
+
+/* Сброс стилей и базовые настройки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Общие стили для хедера */
+.header {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер для логотипа и навигации */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Распределяем логотип и навигацию по краям */
+    align-items: center; /* Центрируем элементы по вертикали */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px; /* Добавляем немного отступов для предотвращения выхода за пределы */
+}
+
+/* Стили для логотипа */
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* Стили для навигации */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding-inline-start: 10px;
+}
+
+.header-nav li {
+    font-size: 16px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #6f9e1e;
+}
+
+/* Основные стили кнопки "Начать тестирование" */
+.btn-start-test {
+    text-align: center;
+    background-color: #6f9e1e;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-left: 20px; /* Оставляем кнопку справа */
+    width: auto; /* Обеспечиваем, что кнопка не будет слишком широкой */
+}
+
+.btn-start-test:hover {
+    background-color: #4f7a17;
+}
+
+/* Карточка вступления */
+.intro {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    width: 100%;
+}
+
+.intro-card {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.intro-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.intro-card .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro-card h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-card p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.intro-card .start-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro-card .start-btn:hover {
+    background-color: #4CAF50;
+}
+
+/* Секции с функциями */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.feature-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-card .feature-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Секции с предложениями */
+.monthly-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.monthly-offers h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.offer-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+    width: 100%;
+}
+
+.offer-card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.offer-card .offer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Секция с ценами */
+.pricing {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.pricing h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-plan {
+    background-color: #e3f9e5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pricing-plan p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.pricing-plan p:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+/* Футер */
+.footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 20px;
+}
+
+.footer-nav li {
+    font-size: 16px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #6f9e1e;
+}
+
+.footer-socials {
+    display: flex;
+}
+
+/* Социальные иконки */
+.social-icon {
+    margin-right: 20px;
+    background-color: white;
+    color: #2e2e2e;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #6f9e1e;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .header-nav {
+        justify-content: space-between;
+        display: flex;
+        align-items: start;
+        width: 100%;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .intro-card {
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .monthly-offers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-inline-start: 0;
+    }
+
+    .footer-socials {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-width: 325px;
+    }
+
+    .intro-card h1 {
+        font-size: 24px;
+    }
+
+    .intro-card p {
+        font-size: 14px;
+    }
+
+    .pricing-plan h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .pricing-plans {
+        flex-direction: row;
+    }
+
+    .offer-cards {
+        flex-direction: row;
+    }
+
+    .features {
+        flex-direction: row;
+    }
+}

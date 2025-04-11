@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗнайКа</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+ <header class="header">
+    <div class="header-content">
+        <div class="logo">
+            <h1>ЗнайКа</h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+		        <li><a href="index.html">Главная</a></li>
+                <li><a href="#pricing">Тарифные планы</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <a href="#start-test" class="btn-start-test">Начать тестирование</a>
+        </nav>
+    </div>
+</header>
+   
+    
+    <main>
+       <section class="intro">
+    <div class="intro-card">
+        <img src="images/books.jpg" alt="Books Image">
+        <div class="intro-text">
+            <h1>Добро пожаловать в сервис "ЗнайКа"</h1>
+            <p>Начните тестирование прямо сейчас, чтобы проверить свои знания.</p>
+            <button class="start-btn" onclick="window.scrollTo({top: document.getElementById('pricing').offsetTop, behavior: 'smooth'})">Начать тестирование</button>
+        </div>
+    </div>
+</section>
+     <section class="features">
+    <div class="feature-card">
+        <img src="images/feature1.jpg" alt="Feature 1">
+        <div class="feature-text">Удобный интерфейс</div>
+    </div>
+    <div class="feature-card">
+        <img src="images/feature2.jpg" alt="Feature 2">
+        <div class="feature-text">Автоматическая оценка</div>
+    </div>
+    <div class="feature-card">
+        <img src="images/feature3.jpg" alt="Feature 3">
+        <div class="feature-text">Аналитика в отчетах</div>
+    </div>
+</section>
+
+<section class="monthly-offers">
+    <h2>Предложения месяца</h2>
+    <div class="offer-cards">
+        <div class="offer-card">
+            <img src="offer1.jpg" alt="Предложение 1">
+            <div class="offer-text">Супер скидка!</div>
+        </div>
+        <div class="offer-card">
+            <img src="offer2.jpg" alt="Предложение 2">
+            <div class="offer-text">Эксклюзивный набор</div>
+        </div>
+        <div class="offer-card">
+            <img src="offer3.jpg" alt="Предложение 3">
+            <div class="offer-text">Лучший выбор</div>
+        </div>
+    </div>
+</section>
+
+
+<section class="pricing" id="pricing">
+    <h2>Тарифные планы</h2>
+    <div class="pricing-plans">
+        <div class="pricing-plan">
+            <h3>Базовый</h3>
+            <p>бесплатно</p>
+            <p>Бесплатный доступ для одного преподавателя и до 50 студентов</p>
+        </div>
+        <div class="pricing-plan">
+            <h3>Про</h3>
+            <p>1000 рублей в месяц</p>
+            <p>Расширенная аналитика, неограниченное количество тестов и студентов</p>
+        </div>
+        <div class="pricing-plan">
+            <h3>Корпоративный</h3>
+            <p>от 5000 рублей в месяц</p>
+            <p>Индивидуальные тарифы и настройка под нужды образовательных учреждений</p>
+        </div>
+    </div>
+</section>
+       
+    </main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#pricing">Тарифные планы</a></li>
+                <a href="reviews.html" class="show-reviews-link">Отзывы</a>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="footer-brand">
+            <p>ЗнайКа</p>
+        </div>
+        <div class="footer-subscribe">
+            <form>
+                <input type="email" placeholder="e-mail" required style="width: 140px;">
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+        <div class="footer-socials">
+            <a href="https://vk.com" target="_blank" class="social-icon vk">VK</a>
+            <a href="https://t.me" target="_blank" class="social-icon telegram">Telegram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Бельшева_Валерия_4321-22</p>
+    </div>
+</footer>
+</body>
+</html>
